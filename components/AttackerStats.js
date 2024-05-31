@@ -88,7 +88,7 @@ export class AttackerStats extends Component {
 
         const potionInput = boosts.map((boost, i) => {
             return (<button key={i} value={boost} onClick={this.boostClick} className={this.props.player.boostList.includes(boost) ? "selected" : ""}>{boost}</button>)
-            return (<div><input type="checkbox" value={boost} id={"stat-boost-" + i} onChange={this.checkboxChange} checked={this.props.player.boostList.includes(boost)} /> <label htmlFor={"stat-boost-" + i}>{boost}</label> </div>)
+            return (<div key={i}><input type="checkbox" value={boost} id={"stat-boost-" + i} onChange={this.checkboxChange} checked={this.props.player.boostList.includes(boost)} /> <label htmlFor={"stat-boost-" + i}>{boost}</label> </div>)
         })
         return (
             <div className='highlight-section flex-container-vertical'>

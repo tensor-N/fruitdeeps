@@ -81,7 +81,6 @@ export default function Index() {
                 <div className="width-control header-flex">
                     <h1 className='page-title'>
                         <img
-                            layout='fill'
                             src="/assets/strawberry thing.svg"
                             style={{ height: "1em", width: "auto" }}
                             alt="fruitdeeps"
