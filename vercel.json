@@ -1,11 +1,8 @@
 {
     "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/node",
-        "config": {
-          "installCommand": "apt-get update && apt-get install -y python3 python3-distutils && npm install"
-        }
-      }
-    ]
+      { "src": "package.json", "use": "@vercel/node" }
+    ],
+    "scripts": {
+      "build": "npm install && npm run build"
+    }
   }
