@@ -29,5 +29,8 @@
     "eslint-config-next": "12.2.5",
     "sass": "^1.54.5",
     "worker-plugin": "^5.0.1"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
